@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1b4f72;
+    line-height: 1.5;
+}
+
+
+.topbar {
+    background-color: #1b4f72;
+    color: white;
+    padding: 25px 40px;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.topbar p {
+    margin-top: 8px;
+}
+
+
+.layout {
+    display: flex;
+    min-height: 75vh;
+}
+
+
+.sidebar {
+    width: 230px;
+    background-color: #eaf1f8;
+    padding: 25px;
+    border-right: 1px solid #d0d7e2;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #1b4f72;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sidebar a:hover {
+    color: #3498db;
+}
+
+
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+.welcome {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #d0d7e2;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Form */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 550px;
+    border: 1px solid #d0d7e2;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #1b4f72;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #2874a6;
+}
+
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    max-width: 550px;
+}
+
+.task-list li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+}
+
+
+aside {
+    background-color: #eaf1f8;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 550px;
+}
+
+footer {
+    background-color: #1b4f72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .topbar {
+        padding: 20px;
+    }
+}

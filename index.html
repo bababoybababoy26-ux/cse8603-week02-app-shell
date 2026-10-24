@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aida's Task Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <h1>Aida's Task Board</h1>
+        <p>Your personal task management application</p>
+    </header>
+
+    <div class="layout">
+
+        <nav class="sidebar" aria-label="Main navigation">
+            <h2>Navigation</h2>
+
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#items">My Tasks</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <main id="dashboard">
+
+            <section class="welcome">
+                <h2>Welcome to Your Dashboard!</h2>
+                <p>
+                    Organize your daily tasks, manage priorities,
+                    and stay productive.
+                </p>
+            </section>
+
+            <section id="items" aria-labelledby="items-heading">
+
+                <h2 id="items-heading">My Tasks</h2>
+
+                <form id="create-item">
+
+                    <label for="task-title">Task Title</label>
+
+                    <input
+                        id="task-title"
+                        name="title"
+                        type="text"
+                        placeholder="Enter your task"
+                        required
+                        minlength="2"
+                    >
+
+                    <label for="priority">Priority</label>
+
+                    <select id="priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+
+                    <button type="submit">Create Task</button>
+
+                </form>
+
+                <h2>Current Tasks</h2>
+
+                <ul class="task-list">
+                    <li>Complete Web Development Practice</li>
+                    <li>Prepare for University Classes</li>
+                    <li>Study JavaScript</li>
+                </ul>
+
+            </section>
+
+            <aside id="about">
+                <h2>About This Application</h2>
+                <p>
+                    This task board was created as part of
+                    CSE8603 Practice Week 02.
+                </p>
+                <p>
+                    The application demonstrates semantic HTML5,
+                    accessible forms, and basic CSS styling.
+                </p>
+            </aside>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>
+            CSE8603 | Satbayev University |
+            Autumn 2026–2027
+        </p>
+        <p>Created by Azimbek Aida</p>
+    </footer>
+
+</body>
+</html>
